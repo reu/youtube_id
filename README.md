@@ -24,7 +24,7 @@ Or install it yourself as:
 YoutubeID.from("http//www.youtube.com/watch?v=RCUkmUXMd_k") # => "RCUkmUXMd_k"
 ```
 
-We currently support these url formats:
+It supports these url formats:
 ```
 http://www.youtube.com/v/RCUkmUXMd_k
 http://www.youtube.com/v/RCUkmUXMd_k?version=3&amp;hl=en_US&amp;rel=0
