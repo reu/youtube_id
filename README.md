@@ -2,6 +2,8 @@
 
 Simple video id extraction from youtube urls.
 
+[![Build Status](https://secure.travis-ci.org/reu/youtube_id.png)](http://travis-ci.org/reu/youtube_id)
+
 ## Installation
 
 Add this line to your application's Gemfile:
