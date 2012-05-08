@@ -1,6 +1,6 @@
 # YoutubeId
 
-TODO: Write a gem description
+Simple video id extraction from youtube urls.
 
 ## Installation
 
@@ -18,12 +18,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+YoutubeID.from("http//www.youtube.com/watch?v=RCUkmUXMd_k") # => "RCUkmUXMd_k"
+```
 
-## Contributing
+We currently support these url formats:
+`http://www.youtube.com/v/RCUkmUXMd_k`
+`http://www.youtube.com/v/RCUkmUXMd_k?version=3&amp;hl=en_US&amp;rel=0`
+`http://www.youtube.com/embed/RCUkmUXMd_k?rel=0`
+`http://www.youtube.com/watch?v=RCUkmUXMd_k`
+`http://www.youtube.com/watch?v=RCUkmUXMd_k&feature=related`
+`http://www.youtube.com/watch?v=RCUkmUXMd_k#t=0m10s`
+`http://www.youtube.com/user/ForceD3strategy#p/a/u/0/8WVTOUh53QY`
+`http://youtu.be/RCUkmUXMd_k`
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Added some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+See the specs for more detailed information.
