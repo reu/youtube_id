@@ -49,6 +49,11 @@ describe YoutubeID do
         let(:url) { "#{protocol}://youtu.be/RCUkmUXMd_k" }
         it { should == "RCUkmUXMd_k" }
       end
+
+      context "shor url format with dashes", "//youtu.be/Hu0i--4tz0N" do
+        let(:url) { "#{protocol}://youtu.be/Hu0i--4tz0N" }
+        it { should == "Hu0i--4tz0N" }
+      end
     end
   end
 end
