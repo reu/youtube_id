@@ -21,7 +21,7 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-YoutubeID.from("http//www.youtube.com/watch?v=RCUkmUXMd_k") # => "RCUkmUXMd_k"
+YoutubeID.from("http://www.youtube.com/watch?v=RCUkmUXMd_k") # => "RCUkmUXMd_k"
 ```
 
 It supports these url formats:
