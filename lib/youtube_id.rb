@@ -2,11 +2,11 @@ require "youtube_id/version"
 
 module YoutubeID
   FORMATS = [
-    %r(https?://youtu\.be/(.+)),
-    %r(https?://www\.youtube\.com/watch\?v=(.*?)(&|#|$)),
-    %r(https?://www\.youtube\.com/embed/(.*?)(\?|$)),
-    %r(https?://www\.youtube\.com/v/(.*?)(#|\?|$)),
-    %r(https?://www\.youtube\.com/user/.*?#\w/\w/\w/\w/(.+)\b)
+    %r<youtu\.be\/([\w-]{11})>,
+    %r<youtube\.com\/watch\?v=([\w-]{11})(&|#|$)>,
+    %r<youtube\.com\/embed\/([\w-]{11})(\?|&|#|$)>,
+    %r<youtube\.com\/v\/([\w-]{11})(\?|&|#|$)>,
+    %r<youtube\.com\/user\/.*?#\w/\w/\w/\w/([\w-]{11})\b>
   ]
 
   def self.from(video_url)
