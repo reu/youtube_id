@@ -45,6 +45,11 @@ describe YoutubeID do
           let(:url) { "#{protocol}#{www}youtube.com/user/ForceD3strategy#p/a/u/0/8WVTOUh53QY" }
           it { should == "8WVTOUh53QY" }
         end
+
+        context "url format with id in the end in list of parameters", "watch?list=PL0jiIBuf0E6uUMHmiqDYOXAsobF39knBs&time_continue=1&v=Hu0i--4tz0N" do
+          let(:url) { "#{protocol}#{www}youtube.com/watch?list=PL0jiIBuf0E6uUMHmiqDYOXAsobF39knBs&time_continue=1&v=Hu0i--4tz0N" }
+          it { should == "Hu0i--4tz0N" }
+        end
       end
 
       context "short url format", "//youtu.be/RCUkmUXMd_k" do
